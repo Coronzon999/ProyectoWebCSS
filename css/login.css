@@ -1,0 +1,146 @@
+/* VARIABLES CSS */
+/* EL ROOT ES EL SELECTOR PADRE */
+:root{
+    --colorPrimario: #EC111A;
+    --colorSecundario: #082BA5;
+    --colorTerciario: #007BDF;
+    --colorTitulos: #282D31;
+    --colorParrafos: #53575A;
+    --colorSombras: #282D31;
+    --colorBordes: #DFE0E0;
+}
+/* SELECTOR UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/fondo-login.jpg);
+    background-size: cover;
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 4px var(--colorSombras);
+}
+
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__img-logo{
+    height: 60px;
+
+}
+
+.menu__btn-menu{
+    display: none;
+}
+
+.menu__enlaces a{
+    font-family: 'Poppins';
+    padding: 0.7em;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--colorTitulos);
+    font-weight: 500;
+    transition: color 1s ease;
+}
+
+.menu__enlaces a:hover{
+    color: var(--colorPrimario);
+}
+
+@media screen and (max-width: 1023px){
+    .menu{
+        flex-direction: column;
+    }
+    .menu__logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+    .menu__btn-menu{
+        display: block;
+        color: var(--colorPrimario);
+        font-size: 1.5em;
+    }  
+
+    .menu__enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+form{
+    display: flex;
+    padding: 1em;
+    max-width: 500px;
+    justify-content: center;
+    margin: 15em auto;
+    background-color: #fff;
+    border-radius: .5em;
+    border: 1.5px solid var(--colorPrimario);
+    font-family: 'Poppins';
+}
+
+.parrafo__logo{
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    margin-top: .5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.img__logo{
+    max-width: 100%;
+    width: 7em;
+    display: block;
+    margin: .5em auto;
+}
+ 
+input{
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: 1em;
+    border: 1.5px solid var(--colorPrimario);
+}
+.usuario, .contraseña{
+    margin-bottom: .3em
+}
+
+.enviar{
+    width: 100%;
+    background-color: var(--colorPrimario);
+    color: #fff;
+    border-radius: .3em;
+    padding: .5em;
+}
+
+.enviar:hover{
+    background-color: var(--colorSombras);
+}
+
+.olvidaste{
+    display: flex;
+    justify-content: center;
+    color: var(--colorPrimario); 
+    font-size: .9em;  
+    margin: 1.4em 0 .5em 0;
+}
