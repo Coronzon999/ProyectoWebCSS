@@ -138,5 +138,26 @@ form{
     margin-top: 2em;
 }
 
+@media screen and (max-width: 1023px){
+   body {
+    padding: 10px;
+    overflow: auto; 
+  }
+  
+  .container {
+    padding: 1.5em;
+    box-shadow: none; 
+  }
 
+  form {
+    width: 100%;
+    margin-top: 2em;   
+    margin-left: 0;  
+  }
+
+  .login__link {
+    margin: 1em 0 0 0; 
+    display: block;
+  }
+}
 
